@@ -50,7 +50,7 @@ public class JpaAuthMain {
         List<Member> members = em.createQuery("select m from Member m", Member.class).getResultList();
         System.out.println("members.size=" + members.size());
 
-        //tag
+        //삭제....
         em.remove(member);
     }
 }
